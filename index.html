@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script> -->
+    <!-- <script src="//js.leapmotion.com/leap-1.1.0.js"></script>
+    <script src="//js.leapmotion.com/leap-plugins-0.1.12.js"></script> -->
+    <script src="leapjs/leap-1.1.1.js"></script>
+    <!-- <script src="leapjs/leap-1.1.1.min.js"></script> -->
+
+  </head>
+
+  <body>
+    <!-- <script src="sketch.js"></script> -->
+
+    <div id=output></div>
+    <script>
+    Leap.loop(function (frame) {
+      console.log(frame.hands.length);
+    });
+    </script>
+
+  </body>
+</html>
